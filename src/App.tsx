@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Linkedin, 
-  Github, 
+import { useState, useEffect } from 'react';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Linkedin,
+  Github,
   ExternalLink,
   Code,
   Briefcase,
@@ -14,7 +14,7 @@ import {
   Star,
   Calendar,
   Award
-} from 'lucide-react';
+} from 'lucide-react'; 
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -29,7 +29,7 @@ function App() {
         if (element) {
           const offsetTop = element.offsetTop;
           const offsetHeight = element.offsetHeight;
-          
+
           if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
             setActiveSection(section);
             break;
@@ -105,47 +105,52 @@ function App() {
       name: "AzanReminder",
       description: "Muslim Prayer Times app with live Qibla direction, current location tracking, prayer countdowns, and interactive Kaaba map. Features offline access and 12-hour format widget.",
       tech: ["Kotlin", "XML", "Jetpack Navigation", "Dagger Hilt", "Room DB", "Retrofit", "MVVM"],
-      github: "https://github.com/MohamedSamir",
+      github: "https://github.com/MohamedSamirMo/AzanReminder",
       playStore: "Amazon App Store",
+      playStoreLink: "https://www.amazon.com/gp/product/B0DRHJXR6Y",
       impact: "20% increase in user engagement"
     },
     {
       name: "SmartlyNews",
       description: "News app with personalized content, dark mode, and category search functionality.",
       tech: ["Kotlin", "XML", "Jetpack Navigation", "Dagger Hilt", "Room DB", "Retrofit", "WebView"],
-      github: "https://github.com/MohamedSamir",
+      github: "https://github.com/MohamedSamirMo/Smartly",
       playStore: "Amazon App Store",
+      playStoreLink: "https://www.amazon.com/gp/product/B0DQVL1YRV",
       impact: "25% efficiency boost"
     },
     {
       name: "CloudScout",
       description: "Weather application providing real-time weather data with intuitive UI and smooth animations.",
       tech: ["Kotlin", "MVVM", "Retrofit", "Dagger Hilt", "Room DB", "Lottie Animation"],
-      github: "https://github.com/MohamedSamir",
+      github: "https://github.com/MohamedSamirMo/Weather_App",
       playStore: "Amazon App Store",
+      playStoreLink: "https://www.amazon.com/dp/B0DNQ9CZR7/ref=apps_sf_sta",
       impact: "15% increase in user retention"
     },
     {
       name: "CleverQuest",
       description: "Interactive quiz application with responsive UI and robust backend integration.",
       tech: ["Java", "Data Binding", "Firebase", "Firebase Authentication", "SOLID Principles"],
-      github: "https://github.com/MohamedSamir",
-      adminGithub: "https://github.com/MohamedSamir",
+      github: "https://github.com/MohamedSamirMo/CleverQuestApp",
+      adminGithub: "https://github.com/MohamedSamirMo/CleverQuestApp",
       impact: "25% enhancement in user engagement"
     },
     {
       name: "GlobalTongue",
       description: "Real-time language translation app with dynamic UI and ML integration.",
       tech: ["Kotlin", "ML Translator", "API Integration", "Lottie Animation", "Unit Testing"],
-      github: "https://github.com/MohamedSamir",
-      playStore: "Amazon App Store"
+      github: "https://github.com/MohamedSamirMo/Translations_App",
+      playStore: "Amazon App Store",
+      playStoreLink: "https://www.amazon.com/gp/product/B0DNSDJJ33"
     },
     {
       name: "MemoPad",
       description: "Note-taking application focused on seamless user experience with robust data handling.",
       tech: ["Kotlin", "XML", "Kotlin Coroutines", "Room DB", "Dagger Hilt", "MVVM"],
-      github: "https://github.com/MohamedSamir",
-      playStore: "Amazon App Store"
+      github: "https://github.com/MohamedSamirMo/MemoPad",
+      playStore: "Amazon App Store",
+      playStoreLink: "https://www.amazon.com/gp/product/B0DNR8MBLN"
     }
   ];
 
@@ -164,11 +169,10 @@ function App() {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`px-3 py-2 text-sm font-medium transition-colors capitalize ${
-                    activeSection === section 
-                      ? 'text-blue-600 border-b-2 border-blue-600' 
+                  className={`px-3 py-2 text-sm font-medium transition-colors capitalize ${activeSection === section
+                      ? 'text-blue-600 border-b-2 border-blue-600'
                       : 'text-gray-600 hover:text-blue-600'
-                  }`}
+                    }`}
                 >
                   {section === 'hero' ? 'Home' : section}
                 </button>
@@ -207,36 +211,36 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
             <div className="max-w-4xl mx-auto mb-10">
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Passionate and dedicated Android Developer with <span className="font-semibold text-blue-600">1.5 years of experience</span> in creating 
-                high-performance mobile applications. Proficient in Java, Kotlin, and Android SDK, with a strong grasp of modern 
-                mobile design principles and best practices. Focused on delivering intuitive, user-friendly solutions through 
+                Passionate and dedicated Android Developer with <span className="font-semibold text-blue-600">1.5 years of experience</span> in creating
+                high-performance mobile applications. Proficient in Java, Kotlin, and Android SDK, with a strong grasp of modern
+                mobile design principles and best practices. Focused on delivering intuitive, user-friendly solutions through
                 teamwork and innovative problem-solving.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <a 
-                href="https://www.linkedin.com/in/mohamed-samir" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/mohamed-samir-1404441a4/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl"
               >
                 <Linkedin className="h-5 w-5" />
                 <span>LinkedIn</span>
               </a>
-              <a 
-                href="https://github.com/MohamedSamir" 
-                target="_blank" 
+              <a
+                href="https://github.com/MohamedSamirMo"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl"
               >
                 <Github className="h-5 w-5" />
                 <span>GitHub</span>
               </a>
-              <button 
+              <button
                 onClick={() => scrollToSection('contact')}
                 className="flex items-center space-x-2 bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl"
               >
@@ -244,8 +248,8 @@ function App() {
                 <span>Contact Me</span>
               </button>
             </div>
-            
-            <button 
+
+            <button
               onClick={() => scrollToSection('experience')}
               className="animate-bounce text-blue-600 hover:text-blue-700 transition-colors"
             >
@@ -265,7 +269,7 @@ function App() {
             </div>
             <p className="text-xl text-gray-600">My professional journey in Android development</p>
           </div>
-          
+
           <div className="space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className="relative">
@@ -319,7 +323,7 @@ function App() {
             </div>
             <p className="text-xl text-gray-600">Technologies and tools I work with</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Object.entries(skills).map(([category, skillList]) => (
               <div key={category} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
@@ -328,7 +332,7 @@ function App() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skillList.map((skill, index) => (
-                    <span 
+                    <span
                       key={index}
                       className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium hover:bg-blue-200 transition-colors cursor-default"
                     >
@@ -339,7 +343,7 @@ function App() {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-16 text-center">
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Languages</h3>
@@ -368,7 +372,7 @@ function App() {
             </div>
             <p className="text-xl text-gray-600">Featured work and applications I've developed</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div key={index} className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group">
@@ -379,14 +383,14 @@ function App() {
                   <p className="text-gray-700 mb-4 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   {project.impact && (
                     <div className="flex items-center space-x-2 mb-4">
                       <Award className="h-4 w-4 text-green-500" />
                       <span className="text-green-700 font-medium text-sm">{project.impact}</span>
                     </div>
                   )}
-                  
+
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.slice(0, 4).map((tech, i) => (
                       <span key={i} className="inline-block bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs font-medium">
@@ -399,9 +403,9 @@ function App() {
                       </span>
                     )}
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-3">
-                    <a 
+                    <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -411,8 +415,9 @@ function App() {
                       <span className="text-sm">Code</span>
                     </a>
                     {project.playStore && (
-                      <a 
-                        href="#"
+                      <a
+                        href={project.playStoreLink}
+                        target="_blank"
                         className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 transition-colors"
                       >
                         <ExternalLink className="h-4 w-4" />
@@ -420,7 +425,7 @@ function App() {
                       </a>
                     )}
                     {project.adminGithub && (
-                      <a 
+                      <a
                         href={project.adminGithub}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -448,7 +453,7 @@ function App() {
             </div>
             <p className="text-xl text-gray-600">Academic background and achievements</p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <div className="flex items-start space-x-6">
@@ -479,8 +484,8 @@ function App() {
                   <div className="bg-gray-50 rounded-lg p-4">
                     <h5 className="font-semibold text-gray-900 mb-2">Graduation Project</h5>
                     <p className="text-gray-700">
-                      <span className="font-medium">Supermarket Online</span> - Built a comprehensive e-commerce platform 
-                      aimed at enhancing shopping efficiency, resulting in a 20% increase in completed transactions. 
+                      <span className="font-medium">Supermarket Online</span> - Built a comprehensive e-commerce platform
+                      aimed at enhancing shopping efficiency, resulting in a 20% increase in completed transactions.
                       Developed using HTML, CSS, JavaScript, jQuery, MySQL, PHP, and Laravel.
                     </p>
                   </div>
@@ -500,9 +505,9 @@ function App() {
               Ready to bring your Android app ideas to life? Let's connect and discuss your next project.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <a 
+            <a
               href="tel:+201012684496"
               className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors group"
             >
@@ -510,18 +515,18 @@ function App() {
               <h3 className="font-semibold mb-2">Phone</h3>
               <p className="text-sm opacity-90">(+20) 1012684496</p>
             </a>
-            
-            <a 
-              href="mailto:mohamedm1samir@gmail.com"
+
+            <a
+              href="mailto:ssameeeer25@gmail.com"
               className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors group"
             >
               <Mail className="h-8 w-8 mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-sm opacity-90">mohamedm1samir@gmail.com</p>
+              <p className="text-sm opacity-90">ssameeeer25@gmail.com</p>
             </a>
-            
-            <a 
-              href="https://www.linkedin.com/in/mohamed-samir"
+
+            <a
+              href="https://www.linkedin.com/in/mohamed-samir-1404441a4/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors group"
@@ -530,9 +535,9 @@ function App() {
               <h3 className="font-semibold mb-2">LinkedIn</h3>
               <p className="text-sm opacity-90">Connect with me</p>
             </a>
-            
-            <a 
-              href="https://github.com/MohamedSamir"
+
+            <a
+              href="https://github.com/MohamedSamirMo"
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors group"
@@ -542,7 +547,7 @@ function App() {
               <p className="text-sm opacity-90">View my code</p>
             </a>
           </div>
-          
+
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <MapPin className="h-5 w-5" />
@@ -564,24 +569,24 @@ function App() {
               <span className="font-semibold">Mohamed Samir Mohamed</span>
             </div>
             <div className="flex space-x-6">
-              <a 
-                href="https://www.linkedin.com/in/mohamed-samir"
+              <a
+                href="https://www.linkedin.com/in/mohamed-samir-1404441a4/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a 
-                href="https://github.com/MohamedSamir"
+              <a
+                href="https://github.com/MohamedSamirMo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Github className="h-5 w-5" />
               </a>
-              <a 
-                href="mailto:mohamedm1samir@gmail.com"
+              <a
+                href="mailto:ssameeeer25@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5" />
